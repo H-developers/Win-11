@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Online assets for smoothness -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet"> <!-- Segoe UI font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script> <!-- Drag/resize -->
+</head>
+<body>
+    <div id="desktop">
+        <!-- Desktop icons -->
+    </div>
+    <div id="taskbar">
+        <div id="start-button"><i class="fas fa-windows"></i></div>
+        <div id="taskbar-apps"></div>
+        <div id="system-tray">
+            <span id="clock"></span>
+            <i class="fas fa-volume-up"></i>
+            <i class="fas fa-wifi"></i>
+        </div>
+    </div>
+    <div id="start-menu" class="hidden">
+        <div id="start-search"><input type="text" placeholder="Search apps, settings, and documents"></div>
+        <div id="pinned-apps">
+            <!-- Pinned apps -->
+        </div>
+        <div id="all-apps">
+            <!-- All apps list -->
+        </div>
+        <div id="power-options">
+            <button id="shutdown"><i class="fas fa-power-off"></i> Shut down</button>
+        </div>
+    </div>
+    <!-- Windows container for opened apps -->
+    <div id="windows-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
